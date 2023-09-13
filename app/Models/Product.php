@@ -31,7 +31,7 @@ class Product extends Model
         return $this->belongsTo(Category::class);
     }
 
-    public function skus():HasMany
+    public function skus(): HasMany
     {
         return $this->hasMany(Sku::class);
     }
